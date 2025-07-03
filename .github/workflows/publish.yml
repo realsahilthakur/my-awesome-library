@@ -18,7 +18,7 @@ jobs:
           node-version: '18'
           registry-url: 'https://npm.pkg.github.com/'
 
-      - name: Authenticate
+      - name: Authenticate to GitHub Packages
         run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
 
 
